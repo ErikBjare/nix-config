@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> {  } }:
+{ nixpkgs ? import <nixpkgs> {} }:
 
 let
   pkgs = [
@@ -9,6 +9,6 @@ let
 
 in
   nixpkgs.stdenv.mkDerivation {
-    name = "dev";
+    name = "myDev";
     buildInputs = pkgs;
   }
